@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Phishing URL Detector",
+    "version": "3.0",
+    "description": "Detects phishing URLs by analyzing various features",
+    "action": {
+      "default_popup": "popup3.html",
+      "default_icon": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+    },
+    "permissions": ["activeTab"],
+  
+    "host_permissions": ["<all_urls>"],
+    "web_accessible_resources": [
+  {
+    "resources": [
+      "lib/tfjs-backend-wasm.wasm"
+    ],
+    "matches": ["<all_urls>"]
+  }
+]
+  }

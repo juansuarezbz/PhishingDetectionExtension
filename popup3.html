@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Detector</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <h1>Phishing Detector</h1>
+    
+    <div class="input-section" id="inputSection">
+      <input type="text" class="url-input" id="urlInput" placeholder="Enter URL(with http/s) or leave blank for current tab">
+      <button class="analyze-btn" id="analyzeBtn">Analyze URL</button>
+      <button class="analyze-btn" id="analyzeCurrentBtn">Analyze Current Page</button>
+    </div>
+    
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Analyzing URL...</p>
+    </div>
+    
+    <div class="result-section" id="resultSection">
+      <div class="url-display" id="urlDisplay"></div>
+      <div class="result-box" id="resultBox"></div>
+      
+      <div class="features-list" id="featuresList">
+        <h3>Analysis Details:</h3>
+        <div id="featuresContainer"></div>
+      </div>
+
+      <button class="analyze-btn" id="newAnalysisBtn">Analyze Another URL</button>
+    </div>
+  
+  <script src="lib/tf.min.js"></script>
+  <script src="lib/tf-backend-wasm.js"></script>
+  <script src="popup3.js"></script>
+</body>
+</html>
