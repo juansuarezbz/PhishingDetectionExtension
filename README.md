@@ -1,4 +1,4 @@
-# **PhishShield** - Anti-Phishing Chrome Extension 
+# **Phishing Detector** - Anti-Phishing Chrome Extension 
 
 A simple browser extension designed to detect phishing websites. Initially intended to leverage a **TensorFlow machine learning model**, the project evolved to use **rule-based URL analysis** for real-time detection when model integration proved challenging.  
 
